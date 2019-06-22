@@ -1,5 +1,5 @@
-from abc import ABCMeta, abstractmethod, abstractproperty
-from tui.typetui import TypeTui
+from abc import ABCMeta, abstractmethod
+from src.tui.typetui import TypeTui
 
 class Control():
 

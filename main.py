@@ -1,13 +1,43 @@
 # -*- coding: UTF-8 -*-
-import os
 #os.getcwd()
 #import vk_api
 #from interface.size import Size
-from size import ConsoleSize
+from src.size import ConsoleSize
+import curses
+from curses import wrapper
+from src.tui.boxes.textbox import TextBox
 
-def main():
+
+def main(stdscr):
+    textbox1 = TextBox(10, 3, [2,10])
     size = ConsoleSize()
-    print(size.getSize())
+
+    stdscr.clear()
+
+    textbox1.draw(size.getSize())
+    stdscr.getkey()
+    #stdscr = curses.initscr()
+    #stdscr.clear()
+    # stdscr.addstr(0, 0, "Current mode: Typing mode",
+    #               curses.A_REVERSE)
+    # curses.init_pair(1, curses.COLOR_RED, curses.COLOR_WHITE)
+    # stdscr.addstr(10, 10, "RED ALERT!", curses.color_pair(1))
+    # stdscr.refresh()
+    # stdscr.getkey()
+    # stdscr = curses.initscr()
+    # stdscr.clear()
+    #
+    # for i in range(0, 10):
+    #     v = i - 10
+    #     stdscr.addstr(i, 0, '10 divided by {} is {}'.format(v, 10 / v))
+    #
+    # stdscr.refresh()
+    # stdscr.getkey()
+
+wrapper(main)
+    # size = ConsoleSize()
+    # if(size.isSizeWork()):
+    #     print(size.getSize())
     # vk_session = vk_api.VkApi(login, password, token = token, scope = '4096')
     # try:
     #     vk_session.auth(token_only=True)

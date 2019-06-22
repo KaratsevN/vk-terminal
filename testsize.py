@@ -1,9 +1,11 @@
 import os
-from src.interface.size import Size
+from src.size import ConsoleSize
 # lol = os.popen('stty size', 'r').read().split()
 # print(lol)
+
+
 def main():
-    size = Size()
+    size = ConsoleSize()
     rows, columns = size.getSize()
     print({},{}).format(size.getSize())
 main()
