@@ -2,14 +2,18 @@
 #os.getcwd()
 #import vk_api
 from src.size import ConsoleSize
-import curses
+# import curses
 from curses import wrapper
 from src.tui.boxes.textbox import TextBox
 
 
 def main(stdscr):
-    textbox1 = TextBox(10, 3, [2,10])
+
     size = ConsoleSize()
+    size.getSize()
+    # textbox1 = TextBox(size.getColumns() - 1, size.getRows() - 1, [0,0])
+    textbox1 = TextBox(5, 5, [0,0])
+
 
     stdscr.clear()
 
@@ -41,7 +45,3 @@ wrapper(main)
     #wall = tools.get_all('wall.get', 100, {'owner_id': 1})
     #friends = vk.friends.get(count = 10, order= 'name', fields = 'id,first_name,last_name')
     #response = vk.wall.get(count=1)
-
-
-if __name__ == '__main__':
-    main()

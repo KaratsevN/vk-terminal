@@ -28,6 +28,11 @@ class ConsoleSize(Control):
         else:
             return None
 
+    def getRows(self):
+        return self._rows
+
+    def getColumns(self):
+        return self._columns
 
 '''
 import os

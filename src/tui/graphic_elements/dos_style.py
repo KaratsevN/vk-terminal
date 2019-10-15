@@ -1,2 +1,2 @@
 
-graphics = {"left-up": "╔", "horizontal-border": "═", "right-up": "╗", "vertical-border": "║"}
+graphics = {"vertical-border": "║", "horizontal-border": "═", "left-up": "╔", "right-up": "╗", "left-down": "╚", "right-down": "╝"}

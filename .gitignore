@@ -1,1 +1,11 @@
+# Folders
+
 .idea/
+__pycache__/
+.code/
+
+# Files
+
+*.pyc
+*.so
+*.pyo
