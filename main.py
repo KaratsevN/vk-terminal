@@ -12,8 +12,7 @@ def main(stdscr):
     size = ConsoleSize()
     size.getSize()
     # textbox1 = TextBox(size.getColumns() - 1, size.getRows() - 1, [0,0])
-    textbox1 = TextBox(5, 5, [0,0])
-
+    textbox1 = TextBox(3, 2, [3,2])
 
     stdscr.clear()
 
@@ -45,3 +44,4 @@ wrapper(main)
     #wall = tools.get_all('wall.get', 100, {'owner_id': 1})
     #friends = vk.friends.get(count = 10, order= 'name', fields = 'id,first_name,last_name')
     #response = vk.wall.get(count=1)
+
