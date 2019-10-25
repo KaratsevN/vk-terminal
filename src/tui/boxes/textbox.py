@@ -23,13 +23,16 @@ class TextBox(Control):
         # drawing top corners
         self.stdscr.addstr(self.position[0], self.position[1], graphics["left-up"])
         self.stdscr.addstr(self.position[0], self.position[1] + self.width - 1, graphics["right-up"])
+
         # drawing bottom corners
         self.stdscr.addstr(self.position[0] + self.height, self.position[1], graphics["left-down"])
         self.stdscr.addstr(self.position[0] + self.height, self.position[1] + self.width - 1, graphics["right-down"])
+
         # drawing horizontal border
         for i in range(1, self.width - 1):
             self.stdscr.addstr(self.position[0], self.position[1] + i, graphics["horizontal-border"])
             self.stdscr.addstr(self.position[0] + self.height, self.position[1] + i, graphics["horizontal-border"])
+
         # drawing vertical border
         for i in range(1, self.height):
             self.stdscr.addstr(self.position[0] + i, self.position[1], graphics["vertical-border"])
