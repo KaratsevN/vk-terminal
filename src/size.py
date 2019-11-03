@@ -24,7 +24,7 @@ class ConsoleSize(Control):
         if self.isSizeWork():
             self._columns = os.get_terminal_size().columns
             self._rows = os.get_terminal_size().lines
-            return self._rows, self._columns
+            return self._columns, self._rows
         else:
             return None
 

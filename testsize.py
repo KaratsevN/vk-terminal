@@ -8,4 +8,5 @@ def main():
     size = ConsoleSize()
     rows, columns = size.getSize()
     print({},{}).format(size.getSize())
+
 main()

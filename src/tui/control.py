@@ -9,7 +9,7 @@ class Control():
         self.height = 0
         self.width = 0
         self.position = [0, 0]
-        self.type
+        self.type = ""
 
     @abstractmethod
     def draw(self):
