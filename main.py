@@ -24,7 +24,7 @@ def main(stdscr):
     textbox1.draw(size.getSize())
     textbox2.draw(size.getSize())
     textbox3.draw(size.getSize())
-    #textbox4.draw(size.getSize())
+    # textbox4.draw(size.getSize())
     stdscr.getkey()
 
 if __name__ == "__main__":
