@@ -49,7 +49,6 @@ if __name__ == "__main__":
     #     print(error_msg)
     #     return
 
-
     #vk = vk_session.get_api()
 
     #wall = tools.get_all('wall.get', 100, {'owner_id': 1})
