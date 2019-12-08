@@ -23,6 +23,7 @@ class TextBox(Control):
     def draw(self, size):
         #if (width > 0) or (height > 0):
         # drawing top corners
+        # maxy, maxx = self.win.getmaxyx()
         self.stdscr.addstr(self.position[1], self.position[0], graphics["left-up"])
         self.stdscr.addstr(self.position[1], self.position[0] + self.width - 1, graphics["right-up"])
 

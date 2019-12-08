@@ -17,4 +17,6 @@ def main(stdscr):
     # Get resulting contents
     message = box.gather()
 
+    stdscr.refresh()
+
 wrapper(main)

@@ -15,15 +15,16 @@ def main(stdscr):
     size.getSize()
 
     # textbox1 = TextBox(size.getColumns() - 1, size.getRows() - 1, [0,0])
-    textbox1 = TextBox(round(size.getColumns()/2), round(size.getRows()/2), [0,0])
-    textbox2 = TextBox(round(size.getColumns()/2), round(size.getRows()/2), [0,round(size.getRows()/2)])
-    textbox3 = TextBox(round(size.getColumns()/2), round(size.getRows()/2), [round(size.getColumns()/2),0])
-    textbox4 = TextBox(round(size.getColumns()/2), round(size.getRows()/2), [round(size.getColumns()/2), round(size.getRows()/2)])
+    textbox1 = TextBox(round(size.getColumns()/2), round(size.getRows()/2), [0, 0])
+    textbox2 = TextBox(round(size.getColumns()/2), round(size.getRows()/2), [5, 5])
+    # textbox3 = TextBox(round(size.getColumns()/2), round(size.getRows()/2), [round(size.getColumns()/2),0])
+    # textbox4 = TextBox(round(size.getColumns()/2), round(size.getRows()/2), [round(size.getColumns()/2), round(size.getRows()/2)])
+
     stdscr.clear()
 
     textbox1.draw(size.getSize())
     textbox2.draw(size.getSize())
-    textbox3.draw(size.getSize())
+    # textbox3.draw(size.getSize())
     # textbox4.draw(size.getSize())
     stdscr.getkey()
 
